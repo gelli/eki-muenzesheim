@@ -34,7 +34,7 @@ module SubmoduleStrategy
   # and copy everything to the release path
   def release
     release_branch = fetch(:release_branch, File.basename(release_path))
-    git :checkout, '-B', release_branch, 
+    git :checkout, '-b', release_branch, 
       fetch(:remote_branch, "origin/#{fetch(:branch)}")
     git :submodule, :update, '--init'
     context.execute "rsync -ar --exclude=.git\* #{repo_path}/ #{release_path}"
