@@ -43,7 +43,16 @@
     "php": ">=5.4",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
-    "johnpbloch/wordpress": "4.1.1"
+    "johnpbloch/wordpress": "4.1.1",
+    "wpackagist-plugin/advanced-responsive-video-embedder": "5.3.3",
+    "wpackagist-plugin/capability-manager-enhanced": "1.5.2",
+    "wpackagist-plugin/download-manager": "2.7.89",
+    "wpackagist-plugin/enhanced-text-widget": "1.4.4",
+    "wpackagist-plugin/google-analytics-for-wordpress": "5.3.3",
+    "wpackagist-plugin/pretty-link": "1.6.5",
+    "wpackagist-plugin/simple-image-widget": "4.2.1",
+    "wpackagist-plugin/woocommerce": "2.3.7",
+    "wpackagist-plugin/woocommerce-de": "3.2.0"
   },
   "extra": {
     "installer-paths": {

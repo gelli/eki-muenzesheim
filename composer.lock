@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "810d0a79dded2bbb2919d78b468e17c6",
+    "hash": "11bc34cad967233c200ea229efb38b68",
     "packages": [
         {
             "name": "composer/installers",
@@ -222,6 +222,186 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-responsive-video-embedder",
+            "version": "5.3.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/advanced-responsive-video-embedder/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-responsive-video-embedder.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-responsive-video-embedder/"
+        },
+        {
+            "name": "wpackagist-plugin/capability-manager-enhanced",
+            "version": "1.5.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/capability-manager-enhanced/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/capability-manager-enhanced.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/capability-manager-enhanced/"
+        },
+        {
+            "name": "wpackagist-plugin/download-manager",
+            "version": "2.7.89",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/download-manager/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/download-manager.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/download-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/enhanced-text-widget",
+            "version": "1.4.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/enhanced-text-widget/",
+                "reference": "tags/1.4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/enhanced-text-widget.1.4.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/enhanced-text-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/google-analytics-for-wordpress",
+            "version": "5.3.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/5.3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.3.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
+            "name": "wpackagist-plugin/pretty-link",
+            "version": "1.6.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/pretty-link/",
+                "reference": "tags/1.6.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pretty-link.1.6.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pretty-link/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-image-widget",
+            "version": "4.2.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/simple-image-widget/",
+                "reference": "tags/4.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-image-widget.4.2.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-image-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "2.3.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/2.3.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.3.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce-de",
+            "version": "3.2.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/woocommerce-de/",
+                "reference": "tags/3.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-de.3.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce-de/"
         }
     ],
     "packages-dev": [],
@@ -229,7 +409,6 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
-    "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
     },
