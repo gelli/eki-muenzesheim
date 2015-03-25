@@ -109,3 +109,8 @@ namespace :assets do
 end
  
 before 'deploy:updated', 'assets:deploy'
+
+# Manual commands to sync database and files
+namespace :sync do
+  task local: %w(wpcli:db:pull wpcli:uploads:rsync:pull)
+end

@@ -7,6 +7,9 @@ require 'capistrano/deploy'
 # Load tasks from gems
 require 'capistrano/composer'
 
+# Use wpcli to sync uploads and database
+require 'capistrano/wpcli'
+
 # Deploy theme submodule 
 require 'capistrano/scm'
 require 'capistrano/git'
