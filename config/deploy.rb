@@ -1,6 +1,8 @@
 set :application, 'bedrock-test'
 set :repo_url, 'git@github.com:gelli/bedrock-test.git'
 
+set :git_strategy, SubmoduleStrategy
+
 # Branch options
 # Prompts for the branch name (defaults to current branch)
 #ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }

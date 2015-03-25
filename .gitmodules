@@ -1,0 +1,3 @@
+[submodule "web/app/themes/stonyray"]
+	path = web/app/themes/stonyray
+	url = https://github.com/gelli/sage.git
