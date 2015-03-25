@@ -62,8 +62,9 @@ end
 # Note that you need to have WP-CLI installed on your server
 # Uncomment the following line to run it on deploys if needed
 # after 'deploy:publishing', 'deploy:update_option_paths'
+
 set :theme_path, Pathname.new('web/app/themes/stonyray')
-set :local_app_path, Pathname.new('web/app/themes/stonyray')
+set :local_app_path, Pathname.new('.')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
  
 namespace :assets do
@@ -76,10 +77,10 @@ namespace :assets do
   end
  
   task :copy do
-    invoke 'deploy:compile_assets'
+    # invoke 'deploy:compile_assets'
  
     on roles(:web) do
-      upload! fetch(:local_theme_path).join('dist'), release_path.join(fetch(:theme_path)), recursive: true
+      upload! fetch(:local_theme_path).join('dist').to_s, release_path.join(fetch(:theme_path)), recursive: true
     end
   end
   
