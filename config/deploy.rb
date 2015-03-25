@@ -63,6 +63,8 @@ end
 # Uncomment the following line to run it on deploys if needed
 # after 'deploy:publishing', 'deploy:update_option_paths'
 
+# Build dist files in the sage theme. This is done locally
+# and then pushed on the server
 set :theme_path, Pathname.new('web/app/themes/stonyray')
 set :local_app_path, Pathname.new('.')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
@@ -83,8 +85,27 @@ namespace :assets do
       upload! fetch(:local_theme_path).join('dist').to_s, release_path.join(fetch(:theme_path)), recursive: true
     end
   end
+
+  task :cleanup do
+    on roles(:web) do
+      within fetch(:release_path).join(fetch(:theme_path)) do
+        execute :rm, '-rf', "assets"
+        #execute :rm, '-f', ".bowerrc"
+        #execute :rm, '-f', ".editorconfig"
+        #execute :rm, '-f', ".git"
+        #execute :rm, '-f', ".gitignore"
+        #execute :rm, '-f', ".jscsrc"
+        #execute :rm, '-f', ".jshintrc"
+        #execute :rm, '-f', ".travis.yml"
+        execute :rm, '-f', "bower.json"
+        execute :rm, '-f', "gulpfile.js"
+        execute :rm, '-f', "package.json"
+        execute :rm, '-f', "ruleset.xml"
+      end
+    end
+  end
   
-  task deploy: %w(compile copy)
+  task deploy: %w(compile copy cleanup)
 end
  
 before 'deploy:updated', 'assets:deploy'
