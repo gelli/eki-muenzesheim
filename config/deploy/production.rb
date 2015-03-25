@@ -2,6 +2,7 @@ set :stage, :production
 
 
 set :deploy_to, -> { "/kunden/homepages/2/d544133102/htdocs/littlebluebag.de/skunkworks.littlebluebag.de" }
+set :tmp_dir, '/kunden/homepages/2/d544133102/htdocs/littlebluebag.de/tmp'
 
 # Simple Role Syntax
 # ==================
