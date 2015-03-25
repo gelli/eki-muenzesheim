@@ -7,9 +7,22 @@ require 'capistrano/deploy'
 # Load tasks from gems
 require 'capistrano/composer'
 
-# Deploy theme submodule
+# Deploy theme submodule 
+require 'capistrano/scm'
 require 'capistrano/git'
-require './lib/capistrano/submodule_strategy'
+class Capistrano::Git < Capistrano::SCM
+  module SubmoduleStrategy
+    include DefaultStrategy
+ 
+    def release
+      context.execute :rm, '-rf', release_path
+      git :clone, '--branch', fetch(:branch),
+        '--recursive',
+        '--no-hardlinks',
+        repo_path, release_path
+    end
+  end
+end
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 # Customize this path to change the location of your custom tasks.
