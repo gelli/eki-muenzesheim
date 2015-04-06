@@ -113,4 +113,5 @@ before 'deploy:updated', 'assets:deploy'
 # Manual commands to sync database and files
 namespace :sync do
   task local: %w(wpcli:db:pull wpcli:uploads:rsync:pull)
+  task remote: %w(wpcli:db:push wpcli:uploads:rsync:push)
 end
