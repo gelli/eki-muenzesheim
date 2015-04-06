@@ -25,5 +25,5 @@ server 'littlebluebag.de', user: 'u78512415', roles: %w{web app db}
 
 fetch(:default_env).merge!(wp_env: :production)
 
-set :wpcli_remote_url, 'http://skunkworks.littlebluebag.de'
-set :wpcli_local_url, 'http://localhost:9000'
+set :wpcli_remote_url, 'http://wwww.littlebluebag.de'
+set :wpcli_local_url, 'http://localhost:3000'
