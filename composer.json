@@ -52,9 +52,7 @@
     "wpackagist-plugin/pretty-link": ">=1.6.5",
     "wpackagist-plugin/simple-image-widget": ">=4.2.1",
     "wpackagist-plugin/woocommerce": ">=2.3.7",
-    "wpackagist-plugin/woocommerce-de": ">=3.2.0",
-    "wpackagist-plugin/export-plus": ">=1.0",
-    "wpackagist-plugin/wordpress-importer": ">=0.6.1"
+    "wpackagist-plugin/woocommerce-de": ">=3.2.0"
   },
   "extra": {
     "installer-paths": {
