@@ -46,13 +46,20 @@
     "johnpbloch/wordpress": ">=4.1.1",
     "wpackagist-plugin/advanced-responsive-video-embedder": ">=5.3.3",
     "wpackagist-plugin/capability-manager-enhanced": ">=1.5.2",
-    "wpackagist-plugin/download-manager": ">=2.7.89",
+    "wpackagist-plugin/simple-download-monitor": ">=3.2.1",
     "wpackagist-plugin/enhanced-text-widget": ">=1.4.4",
     "wpackagist-plugin/google-analytics-for-wordpress": ">=5.3.3",
     "wpackagist-plugin/pretty-link": ">=1.6.5",
     "wpackagist-plugin/simple-image-widget": ">=4.2.1",
+    "wpackagist-plugin/ninja-forms": ">=2.9.7",
+    "wpackagist-plugin/regenerate-thumbnails": ">=2.2.4",
     "wpackagist-plugin/woocommerce": ">=2.3.7",
-    "wpackagist-plugin/woocommerce-de": ">=3.2.0"
+    "wpackagist-plugin/woocommerce-de": ">=3.2.0",
+    "wpackagist-plugin/wordpress-seo": ">=2.0.1",
+    "wpackagist-plugin/wp-biographia": ">=3.3.2",
+    "wpackagist-plugin/yet-another-related-posts-plugin": ">=4.2.4",
+    "wpackagist-plugin/w3-total-cache": ">=0.9.4.1",
+    "wpackagist-plugin/wp-optimize": "1.8.9.10"
   },
   "extra": {
     "installer-paths": {
