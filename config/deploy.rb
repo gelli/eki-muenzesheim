@@ -4,6 +4,8 @@ set :repo_url, 'git@github.com:gelli/bedrock-test.git'
 # ....other configuration
 set :git_strategy, Capistrano::Git::SubmoduleStrategy
 
+set :wpcli_rsync_options, %w[-avz --rsh=ssh --iconv=utf-8-mac,utf-8]
+
 # Branch options
 # Prompts for the branch name (defaults to current branch)
 #ask :branch, -> { `git rev-parse --abbrev-ref HEAD`.chomp }
