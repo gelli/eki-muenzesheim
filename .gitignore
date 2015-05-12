@@ -33,3 +33,5 @@ node_modules
 # Vagrant
 bin
 .vagrant
+web/app/themes/eki/bower_components
+web/app/themes/eki/dist
