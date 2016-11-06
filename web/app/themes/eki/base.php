@@ -22,10 +22,9 @@ use Roots\Sage\Wrapper;
       <div class="container">
         <div class="row">
           <?php
-            if (!is_category() && !is_archive()) :
-            // add subpage list if single page
-            $children = wp_list_pages('title_li=&echo=0&child_of=' . $post->ID);
-            if ($children) : ?> 
+            if (is_page() && !is_category() && !is_archive()) :
+              // add subpage list if single page
+              if (get_pages(array('parent' => $post->ID, 'number' => 1 ))) : ?>
                   <div class="col-sm-3">
                     <div class="row">
                     <div class="well">
